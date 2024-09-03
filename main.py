@@ -15,7 +15,6 @@ import os
 MAIL_ADDRESS = os.environ.get("EV_MAIL_ADDRESS")
 MAIL_APP_PW = os.environ.get("EV_PASS")
 
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
 ckeditor = CKEditor(app)
